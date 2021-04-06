@@ -21,22 +21,22 @@ html {
   justify-content: center;
 }
 .brand-name {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 100%;
 }
-.brand-name img{
+.brand-name img {
   width: 100%;
   height: 100%;
 }
 a {
   text-decoration: none;
 }
-img{
+img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-span{
+span {
   color: var(--primary-color);
 }
 .section-title {
@@ -71,7 +71,7 @@ span{
 }
 
 #header .header {
-  min-height: 11vh;
+  min-height: 8vh;
   transition: 0.3s ease background-color;
 }
 
@@ -82,9 +82,13 @@ span{
   width: 100%;
   height: 100%;
   max-width: 1300px;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
-
+#header .nav-bar .brand-name {
+  width: 100px;
+  height: 100%;
+  margin: 0px 10px;
+}
 #header .nav-list ul {
   list-style: none;
   position: absolute;
@@ -125,10 +129,10 @@ span{
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   color: var(--primary-color);
-  font-size: 8rem;
+  font-size: 6rem;
   letter-spacing: 50px;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.1;
   transition: 0.4s letter-spacing ease;
 }
 
@@ -140,7 +144,7 @@ span{
 #header .nav-list .hamburger {
   /*the box which contains all 3 lines*/
   position: absolute;
-  top: 8px;
+  top: 15px;
   right: 20px;
   z-index: 10;
   width: 60px;
@@ -207,7 +211,6 @@ span{
   background-color: #000;
   position: relative;
   z-index: 1;
-  
 }
 #hero .hero {
   max-width: 1300px;
@@ -239,12 +242,12 @@ span{
 #hero h1:nth-child(1) {
   animation-delay: 1s;
 }
-#hero h1:nth-child(2) {
+/* #hero h1:nth-child(2) {
   animation-delay: 2s;
-}
-#hero h1:nth-child(3) {
+} */
+#hero h1:nth-child(2) {
   animation: text_reveal_name 0.5s ease forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 #hero h1 span {
@@ -359,12 +362,11 @@ span{
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  /* padding: 100px 20px; */
 }
 #about .about-img {
   width: 300px;
   height: 300px;
-  margin: 50px; 
+  margin: 15px;
   position: relative;
 }
 #about .about-img img {
@@ -384,6 +386,7 @@ span{
 
 #about .about-info {
   width: 90%;
+  margin-top: 20px;
 }
 #about .about-info h2 {
   font-size: 1.5rem;
@@ -534,8 +537,8 @@ span{
     font-size: 2.5rem;
     padding: 20px 60px;
   }
-  h1 .section-title {
-    font-size: 6rem;
+  .section-title {
+    font-size: 5rem;
   }
   /*Hero*/
   #hero h1 {
