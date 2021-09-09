@@ -1,7 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 :root {
-  --primary-color: #f45d37;
+  --primary-color: #cf711f;
   /* --secondary-color: rgba(195, 88, 88, 0.794); */
-  --secondary-color: rgb(224, 162, 45);
+  --secondary-color: #fdf2e9;
+  --gradient: linear-gradient(
+    135deg,
+    hsla(28, 74%, 47%, 0.7) 100%,
+    hsla(27, 83%, 95%, 1) 100%
+  );
+
+  --moz-gradient: -moz-linear-gradient(
+    135deg,
+    hsla(28, 74%, 47%, 0.7) 100%,
+    hsla(27, 83%, 95%, 1) 100%
+  );
+
+  --webkit-gradient: -webkit-linear-gradient(
+    135deg,
+    hsla(28, 74%, 47%, 0.7) 100%,
+    hsla(27, 83%, 95%, 1) 100%
+  );
+  --primary-font-color: #333333;
+  --secondary-font-color: #45260a;
 }
 * {
   padding: 0;
@@ -10,7 +30,7 @@
 }
 html {
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
   scroll-behavior: smooth;
 }
 .container {
@@ -39,6 +59,9 @@ img {
 span {
   color: var(--primary-color);
 }
+p {
+  line-height: 1.5rem;
+}
 .section-title {
   font-size: 2rem;
   text-align: center;
@@ -60,20 +83,7 @@ span {
   transition: 0.3s ease;
   transition-property: background-color, color;
 }
-.cta--check {
-  text-transform: uppercase;
-  border: solid #000 0.2rem;
-  color: #000;
-  font-weight: 600;
-  margin: 10px;
-  padding: 5px 10px;
-  text-decoration: none;
-  background-color: transparent;
-  transition: 0.4s ease-out transform;
-}
-.cta--check {
-  transform: scale(1.1);
-}
+
 /*Header section*/
 #header {
   position: fixed;
@@ -330,8 +340,8 @@ span {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(60deg, #f45d37 4.5%, rgb(224, 162, 45) 86%);
-  color: #000;
+  background: var(--gradient);
+  color: var(--secondary-font-color);
 }
 
 #projects .project-info h1 {
@@ -340,15 +350,30 @@ span {
   font-size: 500;
 }
 #projects .project-info h2 {
-  color: #222;
+  color: var(--primary-font-color);
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
 #projects .project-cta {
   margin-top: 20px;
-  display: block;
-  color: var(--primary-color);
+}
+#projects .project-cta button {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  background: none;
+  border: 3px solid var(--secondary-font-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s linear;
+  transition-property: color background-color;
+}
+#projects .project-cta button:hover {
+  background-color: var(--secondary-font-color);
+  color: #fff;
 }
 
 #projects .project-img {
@@ -365,7 +390,7 @@ span {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-color: var(--primary-font-color);
   opacity: 0.5;
 }
 
@@ -432,8 +457,8 @@ span {
   text-align: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: var(--primary-color);
-  box-shadow: 0 0 18px var(--secondary-color);
+  background: var(--gradient);
+  box-shadow: 6px 10px 20px var(--primary-color);
 }
 #contact .contact-info {
   padding: 0 20px;
