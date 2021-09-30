@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Open+Sans&display=swap');
 :root {
   --primary-color: #cf711f;
   /* --secondary-color: rgba(195, 88, 88, 0.794); */
@@ -22,6 +23,9 @@
   );
   --primary-font-color: #333333;
   --secondary-font-color: #45260a;
+  /*FONTS*/
+  --primary-font: 'Rubik', sans-serif;
+  --secondary-font: 'Montserrat', sans-serif;
 }
 * {
   padding: 0;
@@ -64,11 +68,17 @@ p {
   line-height: 1.7rem;
   color: var(--secondary-font-color);
 }
+h2 {
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  margin: 1.5rem;
+}
 .section-title {
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 10px;
+
   letter-spacing: 0.2rem;
   color: var(--secondary-font-color);
 }
@@ -95,12 +105,12 @@ p {
   left: 0;
   top: 0;
   width: 100vw;
-  height: auto;
+  /* height: auto; */
 }
 
 #header .header {
   min-height: 8vh;
-  transition: 0.3s ease background-color;
+  /* transition: 0.3s ease background-color; */
 }
 
 #header .nav-bar {
@@ -270,6 +280,10 @@ p {
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
 }
+
+#hero .hero-name {
+  font-family: var(--secondary-font);
+}
 #hero h1:nth-child(1) {
   animation-delay: 1s;
 }
@@ -314,6 +328,32 @@ p {
 /* End Hero Section */
 
 /*End Hero*/
+
+/*Skills Section*/
+#skills .skills {
+  flex-direction: row;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+#skills .skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(2, 80px);
+  column-gap: 1rem;
+  row-gap: 2rem;
+  justify-content: flex-start;
+  justify-items: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+#skills .tech-icon {
+  width: 50px;
+  height: 50px;
+}
+/*End Skills Section*/
 /*Project Section*/
 #projects .projects {
   flex-direction: column;
@@ -321,9 +361,7 @@ p {
   margin: 0 auto;
   padding: 100px 0;
 }
-#projects .project-header h1 {
-  margin-bottom: 50px;
-}
+
 #projects .project-cards {
   display: flex;
   flex-direction: column;
