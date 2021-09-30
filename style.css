@@ -542,8 +542,10 @@ p {
   padding: 0 2rem;
   gap: 1rem;
 }
-#footer h3 {
+#footer h2 {
   color: var(--primary-color);
+  text-align: center;
+  font-size: 1rem;
 }
 /*End Footer*/
 /*Keyframes*/
