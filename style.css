@@ -37,6 +37,7 @@ html {
   min-height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -136,7 +137,6 @@ p {
 /*Show the mobile_list when ul has active class*/
 #header .nav-list ul.active {
   left: 0;
-  background-color: #000;
 }
 #header .nav-list ul a {
   font-size: 2.5rem;
@@ -235,19 +235,19 @@ p {
   /* background-image: url(./images/img2.jpg);
   background-size: cover;
   background-position: top center; */
-  background-color: #000;
+  background-color: #fff;
   position: relative;
   z-index: 1;
 }
 #hero .hero {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 50px 50px;
   flex-direction: column;
   justify-content: center;
 }
 #hero figure {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 #hero::after {
   content: '';
@@ -256,7 +256,7 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #fff;
   opacity: 0.7;
   z-index: -1;
 }
@@ -266,16 +266,16 @@ p {
   width: fit-content;
   font-size: 3rem;
   position: relative;
-  color: #fff;
+  color: var(--primary-font-color);
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
 }
 #hero h1:nth-child(1) {
   animation-delay: 1s;
 }
-/* #hero h1:nth-child(2) {
+#hero h1:nth-child(2) {
   animation-delay: 2s;
-} */
+}
 #hero h1:nth-child(2) {
   animation: text_reveal_name 0.5s ease forwards;
   animation-delay: 2s;
@@ -302,7 +302,8 @@ p {
 #hero h1:nth-child(3) span {
   animation-delay: 2.5s;
 }
-/*make animation on span*/
+*/
+/*make animation on span
 
 #hero .cta:hover {
   color: #fff;
@@ -558,7 +559,7 @@ p {
 }
 @keyframes text_reveal {
   100% {
-    color: #fff;
+    color: var(--secondary-font-color);
   }
 }
 @keyframes text_reveal_name {
@@ -681,6 +682,6 @@ p {
     display: inline-block;
   }
   #header .nav-list ul li a {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
