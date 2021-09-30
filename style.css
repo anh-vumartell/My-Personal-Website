@@ -187,7 +187,7 @@ h2 {
   width: 60px;
   height: 60px;
   padding: 1rem;
-  border: 2px solid #000;
+  border: 2px solid var(--secondary-font-color);
   border-radius: 50%;
   background: var(--primary-color);
   display: flex;
@@ -202,7 +202,7 @@ h2 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 3px solid #000;
+  border: 3px solid var(--secondary-font-color);
   animation: hamburger_pulse 1s ease infinite;
 }
 #header .nav-list .hamburger .bar {
@@ -506,11 +506,19 @@ h2 {
   background: var(--gradient);
   box-shadow: 6px 10px 20px var(--primary-color);
 }
-#contact .contact-info {
-  padding: 0 20px;
+#contact .contact-list {
+  list-style-type: none;
+  padding: 1.5rem;
 }
-#contact .contact-info h1 {
-  margin-bottom: 10px;
+#contact .contact-icon {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+}
+#contact .contact-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 #contact .social-networks {
   flex-direction: column;
