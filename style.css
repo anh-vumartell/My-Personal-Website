@@ -403,24 +403,29 @@ h2 {
 }
 #projects .project-cta {
   margin-top: 20px;
+  display: flex;
 }
-#projects .project-cta button {
+#projects .project-cta a {
+  background-color: transparent;
+  display: block;
+  border: 3px solid var(--secondary-font-color);
+  border-radius: 28px;
   padding: 0.5rem;
   margin-right: 1rem;
-  background: none;
-  border: 3px solid var(--secondary-font-color);
-  border-radius: 50px;
   font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
   transition: 0.3s linear;
   transition-property: color background-color;
 }
-#projects .project-cta button:hover {
+#projects .project-cta a:visited,
+#projects .project-cta a:link {
+  color: var(--secondary-font-color);
+}
+#projects .project-cta a:hover {
   background-color: var(--secondary-font-color);
-  color: #fff;
+  color: var(--primary-color);
 }
 
 #projects .project-img {
