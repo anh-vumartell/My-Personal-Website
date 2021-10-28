@@ -68,11 +68,19 @@ p {
   line-height: 1.7rem;
   color: var(--secondary-font-color);
 }
-h2 {
+/* h2 {
   text-align: center;
   font-family: var(--secondary-font);
   font-size: 1rem;
   margin: 1.5rem;
+} */
+h2 {
+  color: var(--primary-font-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.6rem 0.5rem;
+  text-align: center;
+  font-family: var(--secondary-font);
 }
 .section-title {
   font-size: 2rem;
@@ -83,19 +91,25 @@ h2 {
   color: var(--secondary-font-color);
 }
 .cta {
-  /*style the 'portfolio'-btn*/
+  /*style the 'portfolio'-btn & - "download resume"-btn*/
   display: inline-block;
   padding: 10px 30px;
-  color: var(--primary-color);
+  color: var(--secondary-font-color);
   background-color: transparent;
-  border: 2px solid var(--primary-color);
+  border: 3px solid var(--secondary-font-color);
   border-radius: 50px;
   font-size: 1.3rem;
   text-transform: uppercase;
+  font-weight: 500;
   letter-spacing: 0.1rem;
   margin-top: 30px;
-  transition: 0.3s ease;
+  transition: 0.4s ease-out;
   transition-property: background-color, color;
+  cursor: pointer;
+}
+.cta:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-font-color);
 }
 
 /*Header section*/
@@ -316,22 +330,14 @@ h2 {
 #hero h1:nth-child(3) span {
   animation-delay: 2.5s;
 }
-*/
-/*make animation on span
 
-#hero .cta:hover {
-  color: #fff;
-  background-color: var(--primary-color);
-}
 /*Text-reveal Effect
 
 /* End Hero Section */
 
-/*End Hero*/
-
 /*Skills Section*/
 #skills .skills {
-  flex-direction: row;
+  flex-direction: column;
   max-width: 1300px;
   margin: 0 auto;
   padding: 5rem 0;
@@ -395,12 +401,11 @@ h2 {
   text-transform: uppercase;
   font-size: 500;
 }
+
 #projects .project-info h2 {
-  color: var(--primary-font-color);
-  font-size: 1.2rem;
-  font-weight: 600;
   margin: 0.6rem 0;
 }
+
 #projects .project-cta {
   margin-top: 20px;
   display: flex;
@@ -479,19 +484,6 @@ h2 {
   max-width: 80vw;
 }
 
-#about .about-info h2 {
-  margin: 1.5rem 0;
-  color: var(--secondary-font-color);
-}
-#about .cta {
-  transition: 0.5s background-color ease-out;
-  font-weight: 600;
-}
-#about .cta:hover {
-  cursor: pointer;
-  background-color: var(--primary-color);
-  color: #fff;
-}
 /*End About Section*/
 /*Contact Section*/
 #contact .contact {
