@@ -436,10 +436,14 @@ h2 {
 #projects .project-img {
   flex-basis: 50%;
   overflow: hidden;
-  height: 500px;
+  height: 400px;
   width: 100%;
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
+}
+#projects .project-img img {
+  height: 100%;
+  width: 100%;
 }
 #projects .project-img::after {
   content: '';
