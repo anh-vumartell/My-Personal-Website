@@ -665,6 +665,7 @@ h2 {
     font-size: 2.5rem;
   }
   #projects .project-cards .project-info {
+    overflow-y: auto;
     height: 100%;
   }
   #projects .project-cards .project-img {
