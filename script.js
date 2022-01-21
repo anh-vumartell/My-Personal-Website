@@ -21,9 +21,11 @@ links.forEach(item => {
 
 /*Add event listener to scrolling to display the background color of the header*/
 document.addEventListener('scroll', () => {
+  console.log('is scrolling');
   const scroll_position = window.scrollY;
+  console.log(scroll_position);
   if (scroll_position > 250) {
-    header.style.backgroundColor = '#fff';
+    header.style.backgroundColor = '#45260a';
   } else {
     header.style.backgroundColor = 'transparent';
   }
