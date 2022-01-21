@@ -135,7 +135,7 @@ h2 {
 #header .nav-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   max-width: 1300px;
 }
@@ -473,8 +473,8 @@ h2 {
   margin: 0 auto;
 }
 #about .about-img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   margin: 0.5rem 1rem;
   position: relative;
 }
@@ -502,26 +502,13 @@ h2 {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 20px;
 }
 
 #contact .contact-list {
   list-style-type: none;
   padding: 1.5rem;
 }
-#contact .social-networks {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--primary-font-color);
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: var(--box-shadow);
-}
-#contact .icons-container {
-  padding: 10px;
-}
+
 #contact .contact-icon {
   width: 2rem;
   height: 2rem;
@@ -532,15 +519,29 @@ h2 {
   justify-content: flex-start;
   align-items: center;
 }
-#contact .social-networks {
-  flex-direction: column;
+
+/*End Contact Section*/
+
+/*Footer*/
+
+#footer .container {
+  min-height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
 }
-#contact .social-networks img {
-  transition: 0.3s ease-out transform;
+#footer .brand-name {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
 }
-#contact .social-networks img:hover {
-  transform: scale(1.2);
+#footer .brand-name img {
+  height: 120%;
+  width: 120%;
 }
+
 /*Tooltip container*/
 .tooltip-container {
   position: relative;
@@ -583,21 +584,9 @@ h2 {
   visibility: visible;
   opacity: 1;
 }
-/*End Contact Section*/
-
-/*Footer*/
-
-#footer .container {
-  min-height: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #footer h2 {
   text-align: center;
   font-size: 1rem;
-  margin: 3rem 0;
 }
 /*End Footer*/
 /*Keyframes*/
@@ -699,19 +688,11 @@ h2 {
   /*Contact*/
   #contact .contact {
     flex-direction: column;
-    padding: 100px 0;
     width: 100%;
     align-items: center;
     justify-content: center;
   }
-  #contact .contact-cards {
-    color: var(--secondary-font-color);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
 
-    margin: 0;
-  }
   #contact .contact-item {
     margin: 20px;
     flex-direction: column;
